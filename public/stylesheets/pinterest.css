@@ -8,23 +8,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-
   background-color: white;
-  width: 40%;
-  height: auto;
+  width: 500px;
   position: absolute;
   margin: auto;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 10px;
   box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
-  padding: 2em;
+
+
 }
 .content {
   width: 70%;
   margin: auto;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .img1 {
