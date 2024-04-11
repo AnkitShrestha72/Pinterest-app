@@ -33,7 +33,7 @@ function isLoggedIn(req, res, next) {
 }
 
 router.get("/profile", isLoggedIn, function (req, res) {
-  res.render("profile", { username: req.user.username });
+  res.render("profile", { fullname: req.user.fullname });
 });
 
 // register route
@@ -46,7 +46,7 @@ router.post("/register", function (req, res) {
 
   userSchema
     .register(userdata, req.body.password)
-    .then(function () {
+    .then(function (registereduser) {
       passport.authenticate("local")(req, res, function () {
         res.redirect("/profile");
       });
