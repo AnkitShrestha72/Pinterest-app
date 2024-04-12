@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="/stylesheets/pinterest.css" />
+    <link rel="stylesheet" href="/stylesheets/signup.css" />
   </head>
   <body>
     <div class="container" action="/register" method="post">
@@ -14,7 +14,7 @@
           alt="pin logo"
           class="img1"
         />
-        <p class="header">Make account to see more</p>
+        <p class="header">Register Your Account</p>
 
         <form action="/register" method="post">
           <input
@@ -36,16 +36,18 @@
             class="detail"
           /><br />
           <input
+            name="address"
+            type="text"
+            placeholder="Address"
+            class="detail"
+          /><br />
+          <input
             name="password"
             type="password"
             placeholder="Password"
             class="detail"
           />
-          <input
-            type="submit"
-            class="btn int"
-            value="Register Account"
-          />
+          <input type="submit" class="btn int" value="Register Account" />
         </form>
 
         <a href="/forgot">Forgot your password?</a>
@@ -75,6 +77,7 @@
           <a href="/login">Already on Pinterest? Log In</a>
         </footer>
       </div>
+     
     </div>
 
     <script

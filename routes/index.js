@@ -13,6 +13,9 @@ router.get("/", function (req, res, next) {
 router.get("/login", function (req, res, next) {
   res.render("login");
 });
+router.get("/feed", function (req, res, next) {
+  res.render("feed");
+});
 
 // Code for logout
 router.get("/logout", function (req, res, next) {
@@ -29,11 +32,15 @@ function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) {
     return next();
   }
-  res.redirect("/");
+  res.redirect("/login");
 }
 
 router.get("/profile", isLoggedIn, function (req, res) {
-  res.render("profile", { fullname: req.user.fullname });
+  res.render("profile", {
+    fullname: req.user.fullname,
+    username: req.user.username,
+    address: req.user.address,
+  });
 });
 
 // register route
@@ -42,6 +49,7 @@ router.post("/register", function (req, res) {
     username: req.body.username,
     email: req.body.email,
     fullname: req.body.fullname,
+    address: req.body.address,
   });
 
   userSchema

@@ -4,27 +4,23 @@
   box-sizing: border-box;
 }
 body {
-  background-color: gray;
+  background-color: #dadada;
   font-family: Arial, Helvetica, sans-serif;
 }
 .container {
-  background-color: white;
-  width: 500px;
-  position: absolute;
-  margin: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 550px;
+  backdrop-filter: blur(100px);
+  margin: 2em auto;
   border-radius: 10px;
   box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.5);
-
-
 }
 .content {
   width: 70%;
   margin: auto;
   text-align: center;
   margin-bottom: 20px;
+  padding: 2em 0;
 }
 
 .img1 {

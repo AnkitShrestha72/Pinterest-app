@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: hsl(75, 94%, 57%);
+  --secondary-light: hsl(0, 0%, 20%);
+  --secondary: hsl(0, 0%, 12%);
+  --secondary-dark: hsl(0, 0%, 8%);
+  --white: hsl(0, 0%, 87%);
+
+  font-family: "inter", sans-serif;
+  font-size: 14px;
+}
+
+html,
+body {
+  width: 100%;
+  background-color: var(--white);
+}
+
+main {
+  width: 100%;
+  max-width: 560px;
+  margin: auto;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 0.85rem;
+}
+.containerpers {
+  margin-top: 1em;
+}
+.containerpers button {
+  width: 17vw;
+  margin: auto;
+}
+.containerpers .logout-btn {
+  width: 17vw;
+  margin: auto;
+}
+.containerpers button:hover {
+  background-color: #a53030;
+}
+
+.containerpers img {
+  width: 100%;
+  max-width: 110px;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.containerpers h1,
+h2,
+p,
+li {
+  text-align: center;
+}
+
+.containerpers h1,
+p,
+li {
+  color: var(--white);
+}
+
+.containerpers .userdetails {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0em;
+  font-size: 2rem;
+}
+
+.containerpers h2 {
+  color: black;
+}
+
+.containerpers h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.containerpers p {
+  margin: 1rem 0 1.5rem;
+}
+
+.containerpers menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+  width: 40%;
+}
+
+.containerpers li {
+  padding: 0.8rem 0;
+  background-color: var(--secondary-light);
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.containerpers li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.containerpers li:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary);
+}
